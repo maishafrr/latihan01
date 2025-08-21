@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport"
+        content="width=device-width,initual-scale=1.0"/>
+        <title>Struktur HTML & CCS Flex</title>
+        <style>
+            body{
+                font-family: sans-serif;
+                margin: 20px;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;/*Susun item secara vertikal secara defalut*/
+            }
+            .header{
+                border: black 2px solid;
+                border-radius: 10px;
+                background-color:  green;
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .main-content{
+                display: flex;
+                gap: 10px;/* Jarak antar item flex*/
+                margin-bottom: 10px;
+            }
+            .navigation{
+                background-color:red;
+                padding: 15px;
+                width: 200px;
+            }
+            .articles{
+                display: flex;
+                flex-direction: column;/* Susun artikel secara vertikal*/
+                gap: 10px;
+                flex-grow:1;/*Membuat area artikel mengisi ruang yang tersedia*/
+                background-color: beige;
+            }
+            .article{
+                background-color: blue;
+                padding: 15px;
+            }
+            .footer{
+                background-color: green;
+                padding: 15px;
+                text-align: center;
+            }
+            .navigation ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .navigation li{
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"></div>
+        <header class="header"> Struktur HTML & CCS Flex</header>
+        <div class="main-content">
+            <nav class="navigation">
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            </nav>
+            <div class="articles">
+                <article class="article">
+                    <h3>article 1</h3>
+                    <p>konten artikel pertama</p>
+                </article>
+                <article class="article">
+                    <h3>article 2</h3>
+                    <p>konten artikel kedua</p>
+                </article>
+                <article class="article">
+                    <h3>article 3</h3>
+                    <p>konten artikel ketiga</p>
+                </article>
+            </div>
+        </div>
+        <footer class="footer">Footer</footer>
+        </div>
+    </body>
+</html>
